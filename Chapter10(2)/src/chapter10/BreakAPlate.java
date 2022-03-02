@@ -120,7 +120,7 @@ public class BreakAPlate implements ActionListener {
      */
     private static void runGUI() {
         JFrame.setDefaultLookAndFeelDecorated(true);
-        @SuppressWarnings("unused")
+        @SuppressWarnings("unused") //this is actually used
 		BreakAPlate carnivalGame = new BreakAPlate();
     }
      
