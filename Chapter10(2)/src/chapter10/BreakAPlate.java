@@ -4,6 +4,7 @@ package chapter10;
 // Break a Plate Implementation 
 // Will Thompson 
 
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -21,16 +22,16 @@ public class BreakAPlate implements ActionListener {
 	private JTextField winTf;
 	
 	public BreakAPlate(){
-		/* initializing the game booth */
+		//initializing the game booth 
 		breakAPlate = new GameBooth(0, FIRST_PRIZE, CONSOLATION_PRIZE);
 		
-		/* Create and set up the frame */
+	
 		frame = new JFrame("BreakAPlate");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(613, 424);
-		//frame.setBorder(BorderFactory.createEmptyBorder(200, 200, 200,200));
+		
 
-		/* Create a content pane with a BoxLayout and empty borders */
+		
 		contentPane = new JPanel();
 		contentPane.setBorder(BorderFactory.createEmptyBorder(200, 200, 200, 200));
 		contentPane.setBackground(new Color(255, 255, 255));
@@ -42,7 +43,7 @@ public class BreakAPlate implements ActionListener {
 		contentPane.add(plates);
 		
 		
-		/* Create a Play button */
+		//button to play the game
 		play = new JButton("Play");
 		play.setBackground(new Color(255, 182, 193));
 		play.setBounds(225, 155, 174, 34);
@@ -50,13 +51,13 @@ public class BreakAPlate implements ActionListener {
 		play.setAlignmentX(JButton.CENTER_ALIGNMENT);
 		play.addActionListener(this);
 		contentPane.add(play);
-		/* Create a label that will show prizes won */
+		//label that will display the prize won 
 		prizeWon = new JLabel(new ImageIcon(BreakAPlate.class.getResource("/chapter10/placeholder.gif")));
 		prizeWon.setBounds(201, 204, 233, 115);
 		prizeWon.setAlignmentX(JLabel.CENTER_ALIGNMENT);
 		prizeWon.setBorder(BorderFactory.createEmptyBorder(20, 0, 0, 0));	//add space above
 		contentPane.add(prizeWon);
-		/* Add content pane to frame */
+		//add the content to the frame
 		frame.setContentPane(contentPane);
 		
 		
@@ -71,8 +72,8 @@ public class BreakAPlate implements ActionListener {
 		winTf.setColumns(10);
 		winTf.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 
-		/* Size and then display the frame. */
 		
+		//displaying the frame
 		frame.setVisible(true);
 		
    }

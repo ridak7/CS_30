@@ -1,5 +1,10 @@
 package chapter10;
 
+
+//Metric Conversion Application 
+//Will Thompson
+
+
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -42,14 +47,8 @@ public class MetricConversionGui implements ActionListener {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
-	
-	/**
-	 * Initialize the contents of the frame.
-	 */
-			
+
+		
 		
 	public MetricConversionGui() {
 		

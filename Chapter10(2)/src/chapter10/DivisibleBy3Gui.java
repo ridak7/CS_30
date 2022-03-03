@@ -1,5 +1,10 @@
 package chapter10;
 
+
+//Divisible By 3 Application 
+//Will Thompson
+
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -21,9 +26,7 @@ public class DivisibleBy3Gui {
 	private JFrame frame;
 	private JTextField tF;
 
-	/**
-	 * Launch the application.
-	 */
+
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -37,16 +40,13 @@ public class DivisibleBy3Gui {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
+	
 	public DivisibleBy3Gui() {	
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
+	//initializing the contents of the frame 
 	private void initialize() {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(new Color(247, 255, 255));
