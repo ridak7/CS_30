@@ -3,7 +3,6 @@ package exercise1;
 
 
 
-
 public class UEmployee {
 
 	private String firstName, lastName;
@@ -12,9 +11,9 @@ public class UEmployee {
 	
 	public UEmployee(String Fn, String Ln, Double Sal) {
 		
-		Fn = firstName;
-		Ln = lastName; 
-		Sal = Salary;
+		firstName = Fn;
+		lastName = Ln; 
+		Salary = Sal;
 		
 	}
 	
