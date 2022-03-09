@@ -21,7 +21,6 @@ public class Unitester {
 		String EmpType;
 		EmpType = input.next();
 		
-		input.close();
 		
 		if(EmpType.equalsIgnoreCase("F")) {
 			
@@ -37,8 +36,7 @@ public class Unitester {
 			String Job = input.next();
 			return new Staff(Fn, Ln, Sal, Job);
 			
-				
-		}	
+		}
 		
 	}	
 	
