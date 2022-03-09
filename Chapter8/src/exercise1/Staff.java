@@ -10,14 +10,13 @@ public class Staff extends UEmployee {
 		public Staff(String Fn, String Ln, double Sal, String Job) {
 			super(Fn, Ln, Sal);
 			
-			jobTitle = Job;
-			
+			jobTitle = Job;		
 		}
 
 
 		public String toString() {
 			return(super.toString() + " " + jobTitle);
 
-		}
-
+			
+  }
 }
