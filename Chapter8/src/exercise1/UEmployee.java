@@ -6,6 +6,7 @@ package exercise1;
 public class UEmployee {
 
 	private String firstName, lastName;
+	@SuppressWarnings("unused")
 	private Double Salary; 
 	
 	

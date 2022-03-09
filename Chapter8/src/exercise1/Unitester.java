@@ -1,57 +1,45 @@
 package exercise1;
 
-import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Unitester {
 
-	public static void main(String[] args) {
+	public static UEmployee assign() {
 		
-		Faculty emp1 = new Faculty("Dean", "Keaton", (double) 150, "Software Developer");
-		Staff emp2 = new Staff("Micheal", "McManus", (double) 600, "Professor");
-		UEmployee emp3 = new UEmployee("Todd", "Hockney", (double) 2000);
-		
-	
 		Scanner input = new Scanner(System.in);
 	
-				
-		String action; 
-		int EmpNumber;
-		Double PayRate;
-	
+		System.out.println("Enter employees first name");
+		String Fn = input.next();
 		
-		UEmployee emp = emp1;
-		do {
-		System.out.println("\nEmployee\\Pay\\Quit");
-		System.out.println("Enter Choice: ");
-		action = input.next();
+		System.out.println("Enter employees last name");
+		String Ln = input.next();
 		
+		System.out.println("Enter employees salary");
+		double Sal = input.nextDouble();
 		
-		if (!action.equalsIgnoreCase("Q")) {
-			System.out.println("Enter Employee Number 1, 2 or 3: ");
-			EmpNumber = input.nextInt();
-			switch(EmpNumber) {
+		System.out.println("Enter employee type: Faculty or Staff");
+		String EmpType;
+		EmpType = input.next();
+		
+		input.close();
+		
+		if(EmpType.equalsIgnoreCase("F")) {
 			
-			case 1: emp = emp1;break;
-			case 2: emp = emp2;break;
-			case 3: emp = emp3;break;	
-			}
-		if(action.equalsIgnoreCase("E")); {
-			System.out.println("emp");
-		    }
+			System.out.println("Enter Department name:");
+			String D = input.next();
+			
+			return new Faculty(Fn, Ln, Sal, D);
 		}
-		else if(action.equalsIgnoreCase("p")) {
-			System.out.println("");
-			PayRate = input.nextDouble();
-		//	payEmployee(emp, PayRate);
-	     }
-		}
-	   while(!action.equalsIgnoreCase("Q"));
-	
-	
-	
-	
-	
-	
+		else
+		{
+			
+			System.out.println("Enter job title");
+			String Job = input.next();
+			return new Staff(Fn, Ln, Sal, Job);
+			
+				
+		}	
+		
 	}	
+	
 }
