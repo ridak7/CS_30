@@ -7,7 +7,7 @@ public class Faculty extends UEmployee {
 	
 	private String Deptname;
 	
-	public Faculty(String Fn, String Ln, Double Sal, String D) {
+	public Faculty(String Fn, String Ln, int Sal, String D) {
 		super(Fn, Ln, Sal);
 	
 		Deptname = D;

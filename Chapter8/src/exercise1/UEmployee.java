@@ -6,11 +6,10 @@ package exercise1;
 public class UEmployee {
 
 	private String firstName, lastName;
-	@SuppressWarnings("unused")
-	private Double Salary; 
+	private int Salary; 
 	
 	
-	public UEmployee(String Fn, String Ln, Double Sal) {
+	public UEmployee(String Fn, String Ln, int Sal) {
 		
 		firstName = Fn;
 		lastName = Ln; 
@@ -21,7 +20,7 @@ public class UEmployee {
 	
 	
 	public String toString() {
-		return (firstName + " " + lastName);
+		return (firstName + " " + lastName + " $" + Salary);
 	
   }
 }

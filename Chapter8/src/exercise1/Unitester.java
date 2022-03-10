@@ -19,7 +19,7 @@ public class Unitester {
 		String Ln = input.next();
 		
 		System.out.println("Enter employees salary");
-		double Sal = input.nextDouble();
+		int Sal = input.nextInt();
 		
 		System.out.println("Enter employee type: Faculty or Staff");
 		String EmpType;
