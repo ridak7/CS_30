@@ -1,3 +1,5 @@
+											Header?
+
 package chapter10;
 
 
@@ -11,7 +13,7 @@ import java.awt.event.*;
  
 
 
-public class BreakAPlate implements ActionListener {
+public class BreakAPlate implements ActionListener {					//coding standards
 	String FIRST_PRIZE = "tiger plush";
 	String CONSOLATION_PRIZE = "sticker";
 	JFrame frame;
@@ -80,11 +82,11 @@ public class BreakAPlate implements ActionListener {
     
     
 	//handle the button click
-    public void actionPerformed(ActionEvent event) {
+    public void actionPerformed(ActionEvent event) {					//coding standards
     	String eventName = event.getActionCommand();
     	String prize;
     	
-    	if (eventName == "Play") {
+    	if (eventName == "Play") {							//coding standards
 			prize = breakAPlate.start();
 			//condition for user winning the tiger  
 			if (prize.equals(FIRST_PRIZE)) {
@@ -94,7 +96,7 @@ public class BreakAPlate implements ActionListener {
 				
 				
 			//condition for user winning the sticker 	
-			} else if (prize.equals(CONSOLATION_PRIZE)) {
+			} else if (prize.equals(CONSOLATION_PRIZE)) {						//coding standards
 				plates.setIcon(new ImageIcon(BreakAPlate.class.getResource("/chapter10/plates_two_broken.gif")));
 				prizeWon.setIcon(new ImageIcon(BreakAPlate.class.getResource("/chapter10/sticker.gif")));
 				
